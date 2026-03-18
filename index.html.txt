@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Curso Premium 🚀</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #111;
+      font-family: Arial;
+    }
+
+    .sticker {
+      padding: 20px 40px;
+      background: #ff4d4d;
+      color: white;
+      font-size: 24px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .sticker:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="sticker" onclick="troll()">
+  🔥 ACEDER AO CURSO 🔥
+</div>
+
+<script>
+  function troll() {
+  document.body.innerHTML = "<h1 style='color:white'>A carregar curso...</h1>";
+  setTimeout(() => {
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+  }, 2000);
+}
+</script>
+
+</body>
+</html>
