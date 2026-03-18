@@ -2,45 +2,100 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Curso Premium 🚀</title>
+  <title>Curso Trading Pro</title>
+
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #111;
       font-family: Arial;
+      background: #0d0d0d;
+      color: white;
+      text-align: center;
     }
 
-    .sticker {
-      padding: 20px 40px;
+    .container {
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #00ff99;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .btn {
       background: #ff4d4d;
-      color: white;
-      font-size: 24px;
+      padding: 20px 40px;
+      font-size: 22px;
       border-radius: 50px;
       cursor: pointer;
+      display: inline-block;
+      margin-top: 30px;
       transition: 0.3s;
     }
 
-    .sticker:hover {
+    .btn:hover {
       transform: scale(1.1);
+    }
+
+    .proof {
+      margin-top: 50px;
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    .countdown {
+      margin-top: 20px;
+      font-size: 22px;
+      color: #ffcc00;
     }
   </style>
 </head>
 
 <body>
 
-<div class="sticker" onclick="troll()">
-  🔥 ACEDER AO CURSO 🔥
+<div class="container">
+  <h1>🔥 Curso Trading 2.0 🔥</h1>
+
+  <div class="subtitle">
+    Aprende a gerar rendimentos consistentes<br>
+    mesmo que estejas a começar do zero
+  </div>
+
+  <div class="countdown">
+    ⏳ Restam apenas 3 vagas disponíveis
+  </div>
+
+  <div class="btn" onclick="comprar()">
+    🚀 ENTRAR AGORA
+  </div>
+
+  <div class="proof">
+    +237 alunos já dentro 💸<br>
+    Resultados comprovados
+  </div>
 </div>
 
 <script>
-  function troll() {
-  document.body.innerHTML = "<h1 style='color:white'>A carregar curso...</h1>";
+  function comprar() {
+  document.body.innerHTML = "<h1 style='color:white; text-align:center; margin-top:100px'>A processar acesso...</h1>";
+
   setTimeout(() => {
-    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    document.body.innerHTML = `
+      <div style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:black;
+      ">
+        <img src="troll.gif" style="max-width:90%; max-height:90%;">
+      </div>
+    `;
   }, 2000);
 }
 </script>
